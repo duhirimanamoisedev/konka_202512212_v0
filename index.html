@@ -1,0 +1,111 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="theme-color" content="#0f172a">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <title>KONKA - Student AI Assistant</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+      body {
+        font-family: 'Inter', sans-serif;
+        overflow: hidden; /* Desktop app feel */
+        user-select: none; /* App feel: disable text selection mostly */
+      }
+      /* Allow text selection in inputs and content areas */
+      input, textarea, .prose, p, h1, h2, h3, span {
+         user-select: text;
+      }
+      
+      /* Custom Scrollbar for Windows Feel */
+      ::-webkit-scrollbar {
+        width: 8px;
+        height: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: rgba(255, 255, 255, 0.02);
+      }
+      ::-webkit-scrollbar-thumb {
+        background: rgba(255, 255, 255, 0.15);
+        border-radius: 4px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: rgba(255, 255, 255, 0.3);
+      }
+      
+      /* Hide scrollbar for cleaner UI in specific areas */
+      .scrollbar-hide::-webkit-scrollbar {
+          display: none;
+      }
+      .scrollbar-hide {
+          -ms-overflow-style: none;
+          scrollbar-width: none;
+      }
+      
+      /* Animations */
+      @keyframes fadeIn {
+         from { opacity: 0; transform: translateY(10px); }
+         to { opacity: 1; transform: translateY(0); }
+      }
+      .animate-fade-in {
+         animation: fadeIn 0.4s ease-out forwards;
+      }
+      
+      @keyframes slideIn {
+         from { transform: translateX(100%); opacity: 0; }
+         to { transform: translateX(0); opacity: 1; }
+      }
+      .animate-slide-in {
+         animation: slideIn 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+      }
+    </style>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              glass: {
+                100: 'rgba(255, 255, 255, 0.03)',
+                200: 'rgba(255, 255, 255, 0.08)',
+                300: 'rgba(255, 255, 255, 0.15)',
+                border: 'rgba(255, 255, 255, 0.1)',
+                surface: 'rgba(0, 0, 0, 0.4)',
+              },
+              konka: {
+                green: '#10b981',
+                dark: '#0f172a',
+              }
+            },
+            backdropBlur: {
+              xs: '2px',
+            },
+            animation: {
+               'spin-slow': 'spin 3s linear infinite',
+            }
+          }
+        }
+      }
+    </script>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.30.0",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.555.0",
+    "react-router-dom": "https://aistudiocdn.com/react-router-dom@^7.9.6",
+    "recharts": "https://aistudiocdn.com/recharts@^3.5.1"
+  }
+}
+</script>
+</head>
+  <body class="bg-slate-900 text-white selection:bg-konka-green selection:text-white">
+    <div id="root"></div>
+  </body>
+</html>
