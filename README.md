@@ -1,74 +1,66 @@
-📖 Overview
-KONKA is a modular, student-focused wellbeing and productivity app designed with glassmorphism UI, multilingual support, and AI-driven insights. It integrates academics, finance, wellbeing, and personal management into one seamless platform. KONKA empowers learners and professionals to track progress, manage tasks, and maintain balance across multiple aspects of life.
+# 🇰 **KONKA App**
 
-✨ Features
-Dashboard: Central hub for quick access to all modules.
+A modular, student-focused **wellbeing and productivity platform** designed for clarity, performance, and global accessibility.
 
-Academics: Track courses, assignments, grades, and milestones.
+KONKA integrates academics, finance, wellbeing, and personal management into one seamless application using a modern **glassmorphism** UI and **AI-driven insights**.
 
-Finance: Manage budgets, expenses, and savings goals.
+---
 
-Wellbeing: Monitor physical, emotional, and spiritual wellbeing with AI-driven prompts.
+## 🚀 Badges & Status
 
-TimeHub: Smart scheduling and task recurrence with explicit day/month precision.
+| Category | Status | Details |
+| :--- | :--- | :--- |
+| **Version** | `0.1.0` | Active development |
+| **License** | `MIT` | Free to use, modify, and distribute |
+| **Build** | `Node.js 18+, React + TypeScript` | Targeting cross-platform desktop/PWA |
+| **Packaging** | `Electron/Tauri` | Benchmarking for optimal performance |
+| **CI/CD** | `GitHub Actions` | Template included for automated checks |
 
-Profile: Personal information, preferences, and multilingual settings.
+---
 
-Settings: Customization options for themes, notifications, and integrations.
+## ✨ Overview & Core Features
 
-🛠️ Tech Stack
-Frontend: React + TypeScript
+KONKA empowers learners and professionals to track progress, manage tasks, and maintain balance across multiple aspects of life. The architecture favors **modularity**, clean data handling, and **explicit scheduling logic** for reliable analytics and user control. 
 
-UI Design: Glassmorphism principles, responsive layout
+| Module | Description | Key Capabilities |
+| :--- | :--- | :--- |
+| **Dashboard** | Central hub for quick access and overview. | At-a-glance status of all modules. |
+| **Academics** | Progress, grades, and course tracking. | Track courses, assignments, grades, and milestones. |
+| **Finance** | Budgeting and expense management. | Manage budgets, expenses, and savings goals. |
+| **Wellbeing** | Holistic wellness monitor. | Monitor physical, emotional, and spiritual wellbeing with AI-driven prompts. |
+| **TimeHub** | Advanced task scheduling. | Smart scheduling and task recurrence with explicit day/month precision. |
+| **Profile & Settings** | Customization and multilingual support. | Personal information, themes, notifications, and language switching. |
 
-Backend Services: Node.js, modular APIs
+---
 
-Data Handling: Robust JSON parsing with safety cleaners
+## 💻 Tech Stack
 
-Packaging: Electron/Tauri (benchmarking for performance and adoption)
+| Layer | Technology | Rationale |
+| :--- | :--- | :--- |
+| **Frontend** | `React + TypeScript` | Robust, scalable, and type-safe UI development. |
+| **Design** | `Glassmorphism Principles` | Modern, clean, and focus-enhancing user interface. |
+| **Backend** | `Node.js, Modular APIs` | High performance, scalable, and flexible service layer. |
+| **Data** | `JSON Schemas, Cleaners` | Explicit and safe data handling for reliable analytics. |
+| **Packaging** | `Electron/Tauri` | Benchmarking for native desktop performance and cross-platform adoption. |
+| **Automation** | `n8n/Docker Pipelines` | Scalable backend automation and process orchestration. |
 
-Automation: n8n/Docker pipelines for scalability
+---
 
-🚀 Getting Started
-Prerequisites
-Node.js (>= 18.x)
+## 🛠️ Getting Started
 
-npm or yarn
+### Prerequisites
 
-Git
+Ensure you have the following installed:
 
-Installation
-bash
-git clone https://github.com/your-org/konka.git
-cd konka
+* **Node.js**: Version 18 or newer
+* **Package Manager**: `npm` or `yarn`
+* **Git**: Latest stable version
+
+### Installation
+
+Clone the repository and install the dependencies:
+
+```bash
+git clone [https://github.com/duhirimanamoisedev/konka_202512212_v0.git](https://github.com/duhirimanamoisedev/konka_202512212_v0.git)
+cd konka_202512212_v0
 npm install
-npm run dev
-Build
-bash
-npm run build
-🌍 Internationalization
-Multilingual support with modular language files stored in /locales.
-
-Automated generation of translation files for scalability.
-
-📦 Deployment
-PWA-ready with meta tags for native desktop feel.
-
-Configurable packaging via Electron or Tauri.
-
-Cloud-ready for global accessibility.
-
-🧭 Roadmap
-AI-driven wellbeing tracker with holistic insights.
-
-Advanced milestone visualization (TEGANYA integration).
-
-Secure voting platform integration (Tora by Ola Inc).
-
-Kid-friendly learning modules with gamification.
-
-🤝 Contributing
-We welcome contributions! Please fork the repo and submit pull requests. Follow our coding standards and ensure commits are clean and well-documented.
-
-📜 License
-MIT License – free to use, modify, and distribute with attribution.
